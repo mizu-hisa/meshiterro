@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get '/homes/about' => 'homes#about', as: 'about'
   
-  resources :users, only: [:show, :edit]
+  resources :users, only: [:show, :edit, :update]
   # resourcesで一括まとめる
   # get 'users/show'
   # get 'users/edit'
