@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   # get 'post_images/index'
   # get 'post_images/show'
     resources :post_comments, only: [:create, :destroy]
+     resource :favorites, only: [:create, :destroy]
   end
 
 
